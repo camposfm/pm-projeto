@@ -1,0 +1,57 @@
+* { margin: 0;
+	padding: 0}
+
+.principal { 
+	width: 375px; height: 667px;
+	background-color: #745cc1;
+}
+img{ margin top: 65px;
+ margin-left: 140px;
+	margin-right: 140px;
+	padding-top: 65px
+		
+
+}
+
+.input-div { width: 86px;
+	height: 21px;
+	font-size: 18px;
+	color: #ffffff;
+	margin-left: 100px;
+	margin-top: 70px;
+	background-color: #745cc1;
+}
+
+
+.login {margin-top: 50px ;
+	margin-left: 160px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+
+		
+}
+
+.esqueci { font-size: 14x;
+	width: 134px;
+	height: 14px;
+	color: white;
+	text-align: center;
+	margin-left: 120px;
+	margin-right: 120px
+	
+}
+a {text-decoration: none;
+	color: white;
+	font-size: 14px
+
+
+} 
+#senha{background-color: aqua;}
+
+
+	
+	
+	
+
+
+   
