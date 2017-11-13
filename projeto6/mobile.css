@@ -1,0 +1,11 @@
+.banner {
+        width: 100%;
+        max-width: 300px;
+        float: left;
+        padding-right: 10px;
+     }
+.principal{
+        width: 960px;
+        margin: auto;
+    }
+
