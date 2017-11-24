@@ -1,0 +1,238 @@
+body{
+    font-family: lato, sans-serif;
+}
+.container{
+    max-width: 960px;
+    margin: auto;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+header{
+    height:100px;
+    margin-bottom: -100px
+}
+header ul{
+    padding-top: 20px;
+}
+header h1{
+    margin: 0;
+    background-image: url(musica.png);
+    background-repeat: no-repeat;
+    width: 190px;
+   margin-top: 15px;
+    
+}
+
+header h1 span{
+    visibility: hidden
+}
+header li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 100px;
+}
+header a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    
+}
+header nav li:last-child{
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 10px 30px;
+}
+#topo{
+    background-image: url(fundo.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:1000px;   
+}
+
+#topo .topoleft{
+    padding-top: 350px;
+    text-align: center;
+    
+}
+#topo .topoleft h2 {
+    font-size: 50px;
+    color: #fff;
+    margin:0;
+    margin-bottom: 10px;
+    
+}
+#topo .topoleft p {
+    font-size: 36px;
+    font-weight:300;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.botão{
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 300;
+    background-color: #ff3d7f;
+    color: #fff;
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 3px;
+    box-shadow: 0px 6px 0px 0px #a32751
+    
+}
+#conheça{
+    margin-top: 80px;
+}
+#conheça img{
+    width: 390px;
+    height: 390px;
+}
+#conheça .conheçarigth{
+    margin-left: 80px;
+    width: 50%;
+    margin-top: 20px;
+
+}
+.conheçarigth h2{
+    font-size: 36px;
+    
+    
+}
+.conheçarigth p{
+    font-size: 24px;
+    font-weight: 300;
+    
+}
+#conheça .botão{
+    text-align: center;
+    width: 70%
+}
+#depoimento{
+    background-color: #ebe8fb;
+    border-top: 3px solid #511099
+}
+#depoimento .container {
+    flex-direction:column;
+    align-items: center;
+}
+#depoimento .container .foto {
+    width: 150px;
+    height: 150px;
+     margin-top: 63px;   
+}
+#depoimento .container p{
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+}
+section#contato {
+    padding-top: 200px;
+    padding-bottom: 80px;
+    background-image: url(fundo-convite.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+#contato .container form{
+    margin-top: 200px;
+    background-color: rgba(255,255,255,0.9);
+    height: 100px;
+    width: 70%;
+    margin: auto;
+   border-radius: 3px
+    
+        
+}
+#contato form .email{
+    padding-top: 0px;
+    float: left;
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    padding-left: 20px;
+    height: 100px;
+    font-size: 24px;
+    text-align: left;
+    border: none
+    
+    
+}
+#contato form .enviar{
+    padding-top: 50px;
+    float: left;
+    background-color: transparent;
+    border: none;
+    background-image: url(carta.png);
+    background-repeat: no-repeat;
+    width: 17%;
+    margin-top: 29px;
+    color: transparent;
+ 
+}
+
+footer {
+    background-color:#2a0157;
+    
+    
+}
+footer .container{
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+@media (max-width: 600px){
+    #topo .container {
+        padding: 5px;
+    }
+    
+    header nav{
+        display: none;
+    }
+    header h1{
+        height: 100px;
+        margin-left: 20px;
+    }
+    #conheça .container{
+         flex-direction: column;
+        margin: 10px;
+  
+    }
+    .conheçarigth{
+        padding: 0;
+        margin: 0;
+        width: 100%
+    }
+
+#conheça .container .conheçarigth .botão{
+    width: 100%;
+    
+}
+#contato .container form {
+    width: 100%;
+    margin-right: 0;
+    
+
+    }
+#contato .container form .email {
+    width: 60%;
+    font-size: 15px
+    
+    }
+    #contato .container form .enviar{
+        width: 25%;
+        float: right;
+        margin-right: 20px;
+    } 
+}
