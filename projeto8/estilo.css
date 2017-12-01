@@ -1,0 +1,229 @@
+body {
+    background-color: #f5f5f5;
+    font-family: arial;
+    
+}
+.topo {
+    width: 100%;
+    height: 60px;
+    background-color: #242536;
+    
+}
+
+.topolefth{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #141524;
+    height: 60px;
+    
+}
+.topolefth h1{
+    margin: 0;
+    height: 60px;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+} 
+.topolefth span{
+    visibility: hidden;
+}   
+   
+    
+
+.td{
+    float: right;
+    line-height: 60px;
+    padding: 15px;
+    
+}
+aside{
+    background-color: #242536;
+    color: #ffffff;
+    width: 200px;
+    height:1030px;
+    float: left;
+   
+    
+}
+
+aside li{
+    list-style: none;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 14px;
+    font-family: arial;
+    line-height: 0px;
+}
+
+aside li:hover {
+    background-color:#151524;
+    border-left:4px solid #ffb946;
+    padding-left: 6px;
+    
+    
+}
+aside ul{
+    margin: 0;
+    padding: 0;
+  
+    
+}
+aside a{
+    text-decoration: none;
+    color: #fff;
+}
+aside img{
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+aside .p{
+    float: right;
+    margin-right: 15px;
+    color: rgba(255,255,255,0.6);
+}
+
+    
+.base{
+    background-color: #151524;
+}
+.topoformulario{
+    background-color: #ffffff;
+    height: 60px;
+    border-bottom: 1px solid #e6e6e6
+   
+    
+    
+}
+.topoformulario ul{
+    padding: 0;
+    margin: 0;
+    padding-top: 6px;
+}
+.formulario .p1{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.topoformulario li{
+    list-style: none;
+    display: inline;
+    margin-left: 45px;
+    font-size: 14px;
+
+}
+.topoformulario a{
+    text-decoration: none;
+    height: 61px;
+    color: #161616;
+    font-weight: 700;
+    
+}
+.topoformulario a:hover{
+    color: #ffb946;
+    box-shadow: 0px -3px 0px #ffb946 inset; 
+    padding-bottom: 20px;
+    
+}
+.formulario{
+    background-color: #ffffff;
+    margin: 20px;
+    margin-left: 220px;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    box-shadow: 20px;
+    
+}
+.formulario li input, select{
+    display: block;
+    width: 400px;
+    height:40px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    padding-left: 10px;
+    border:1px solid #dddddd;
+}
+
+.formulario select{
+    color: #c5c5c5;
+    width: 412px
+    
+}
+::-webkit-input-placeholder{
+    color: #c5c5c5;
+}
+.paragrafo{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 0px
+
+}
+.formulario .paises{
+    background-image: url(seta.png);
+    background-repeat: no-repeat;
+    background-position: 98%;
+}
+form li{
+    margin: 0;
+    padding-bottom:15px;
+    width: 440px;
+    height: 40px;
+    list-style: none;
+}
+form ul{
+    padding: 0;
+    margin: 0;
+}
+form li.ok{
+    background-image: url(2-layers.png);
+    background-repeat: no-repeat;
+    background-position:top 13px right;
+    
+}
+
+.marcador{
+    font-size: 14px;
+    font-weight: 400
+}
+.marcador img{
+    margin-right: 10px
+}
+.formulario button{
+    width: 400px;
+    height: 40px;
+    color: white;
+    background-color: #3aca60;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    display: block;
+}
+
+    
+.confirma li {
+    font-size: 14px;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.confirma .chek{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    float: left;
+   
+}
+.confirma{
+    margin-top: 40px;
+    
+        
+}
