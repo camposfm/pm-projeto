@@ -126,7 +126,7 @@ padding-bottom: 110px
 
 .conteudo .paragrafo{
     width: 370px;
-    float: left;
+    float: right;
     font-size: 15px;
     margin-left: 20px;
     color: #666666;
@@ -146,21 +146,24 @@ padding-bottom: 110px
     }
     .conteudo{
         width: 100%;
-        display: flex;
-        flex-direction: column;
         margin-right: 40px;
-        text-align: left
+        
       
     }
     .experiencia{
-        margin-bottom: 0px;
-        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0px;
+    
     
     }
     .conteudo .paragrafo{
-       margin-top: 0px;
-        padding-top: 0px;
-        margin-left: 0;
+       padding-left: 5px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        margin-left: 0px;
+        padding-right: 20px
+        
 
             
     }
