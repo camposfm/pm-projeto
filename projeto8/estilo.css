@@ -16,20 +16,17 @@ body {
     width: 200px;
     background-color: #141524;
     height: 60px;
+    line-height: 60px;
+    text-align: center
     
 }
-.topolefth h1{
-    margin: 0;
-    height: 60px;
-    background-image: url(logo.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-} 
+
 .topolefth span{
     visibility: hidden;
 }   
-   
     
+    
+   
 
 .td{
     float: right;
