@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <meta name="viewport" content="width:device-wuidth, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+   <link rel="stylesheet" href="estilo.css">
+   <link rel="stylesheet" href="article.css">
+   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card altura">
+            <label for="altura">Altura em metros</label>
+            <input type="number" id="altura" name="altura">
+        </div>
+        <div class="card peso">
+                <label for="peso">Peso em quilos</label>
+                <input type="number" id="peso" name="peso">
+        </div>
+        <div class="dinamico">
+            <button class="botaoimc" onclick="mostrarResultado()" >IMC</button>
+
+            <div  class="resultado esconder">
+                <a href="#" class="voltar" onclick="voltar()"> <span><img src="arrow-left.png" alt=""></span></a>
+                <div class="texto">
+                    <p class="imcValor"></p>
+                    <small class="imcDesc"></small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script> 
+    function $(elemento){
+        return document.querySelector(elemento)
+    }
+    
+      function mostrarResultado(){
+          const altura = $('#altura')
+          const peso = $('#peso')
+
+          if(altura.value == ''){ // se o valor preenchido em 'altura' estiver vasio ao clicar no botão redirecionara ao elemento #altura
+              altura.focus()
+          }
+          if(peso.value == ''){ // se o valor preenchido em "peso" estiver vasio ao clicar no botão redirecionara ao elemento #peso
+              peso.focus()
+          }
+          
+          else{
+            calcularResultado(altura, peso)
+           
+
+          }
+          // classe esconder = display none
+          $('.resultado').classList.remove('esconder'); // remove classe ao elemento
+          $('.botaoimc').classList.add('esconder');// add classe ao elemento
+        
+      }
+      
+      function voltar(){
+        $('.resultado').classList.add('esconder'); 
+        $('.botaoimc').classList.remove('esconder');
+
+      }
+      function calcularResultado(altura, peso){
+          const imc = calcularImc (altura.value, peso. value)
+          const x = grauImc(imc)
+          $('.imcValor').innerHTML = imc.toLocaleString ('pt-BR', { maximumFractionDigits: 2})
+          $('.imcDesc').innerHTML = x
+      }
+
+      function calcularImc(altura, peso){
+          return peso / (altura * altura)
+      }
+      function grauImc(imc){
+          if (imc <= 16){
+              return 'magresa grave'
+          }
+          if (imc > 16 && imc <= 20){
+            return 'magro'
+          }
+          if (imc > 20 && imc <= 25){
+            return 'peso ideal'
+          }
+          if (imc > 25 && imc <= 30){
+            return 'acima do peso'
+          }
+          if(imc > 30 && imc <= 35){
+            return 'obesidade grau 1'
+          }
+          if(imc > 35 && imc <= 40){
+            return 'obesidade grau 2'
+          }
+          if(imc > 40 ){
+            return 'obesidade morbida'
+          }
+      }
+
+      
+
+
+      
+
+      
+
+      
+
+    
+    </script>
+
+   
+   
+   
+   
+   
+   
+    
+</body>
+
+</html>

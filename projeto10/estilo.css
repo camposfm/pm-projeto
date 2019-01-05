@@ -1,174 +1,108 @@
 body{
-    font-family: lato;
-    display: flex;
-    background-color: #f5f8f9;
-}
-.container{
-    width: 100%;
-    max-width: 960px;
-    margin: auto;
-}
-
-header{
-    float: left;
-    width: 35%;
-    text-align: center;
-    background-color: #3a3c40;
-    height:1000px;
-}
-
-header .info img{
-    width: 140px;
-    height: 200px;
-    margin-top: 30px;
-    border-radius: 5px
-}
-header .info h1{
-    color: #eea31f;
-    font-size: 24px;
-    font-weight: 700;
-    
-}
-header .info p{
-    color: #ffffff;
-    font-size: 16px;
-    
-}
-header .info button {
-    margin-top: 10px;
-    background-color:#f6a623;
-    width: 140px;
-    height: 50px;
-    border: none;
-    border-radius: 3px;
-    box-shadow: 0px 4px 0px 0px #aa7d2c;
-    color: #fff;
-    cursor: pointer
-    
-}
-header .info ul{
-    display: flex;
-    justify-content: center;
-    
-}
-
-header .info ul img{
-    width: 26px;
-    height: 30px;
-    margin-right:5px;
-    margin-left: 5px;
-    margin-top: 20px;
-    float: left
-}
-header .conhecimento{
-    text-align: left;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 40px;
-}
-header .conhecimento h2{
-    font-size: 16px;
-    font-weight: 700;
-    color: #eeeeee;
-    margin-bottom: 20px;
-    
-    
-}
-header .conhecimento p{
-    color: #8fa4af;
-    font-size: 12px;
-    font-weight: 400;
-}
-
-.conteudo{
-   float: left;
-    background-color:#ffffff;
-    width: 65%;
-    height: 1000px;
-    padding: 40px;
-    padding-top: 20px;
-        
-}
-.conteudo h2{
-    font-size: 18px;
-    color: #d0021b;
-    font-weight: 900;
-    border-bottom: 1px solid #d0021b;
-    margin-bottom: 20px
-}
-.conteudo p{
-    color: #666666;
-    font-size: 15px;
-}
-.conteudo .experiencia {
-padding-bottom: 110px
-    
-}
-.conteudo .fundador{
-    float: left;
-
-}
-.conteudo .fundador h3{
-    font-size: 17px;
-    color: #3a3c40;
-    font-weight: 700;
-}
-.conteudo .fundador small{
-    color: #3a3c40;
-    font-size: 15px;
-    font-weight: 400;
-}
-.conteudo .fundador span{
-    font-size: 15px;
-    color: #3a3c40;
-    font-weight: 300;
-}
-
-.conteudo .paragrafo{
-    width: 370px;
-    float: right;
-    font-size: 15px;
-    margin-left: 20px;
-    color: #666666;
-    
-}
-
-@media (max-width: 600px){
+     font-family: lato;
+    background-color: #f5f8f9
    
-    
-    header{
-        width: 100%;
-        height: 1100px;
-    }
-    header .info img {
-        width: 300px;
-        height: 500px
-    }
-    .conteudo{
-        width: 100%;
-        margin-right: 40px;
-        
-      
-    }
-    .experiencia{
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 0px;
+}
+aside{
+    background-color:#3a3c40;
+    text-align: center;
+    padding: 50px !important;
     
     
-    }
-    .conteudo .paragrafo{
-       padding-left: 5px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        margin-left: 0px;
-        padding-right: 20px
-        
+}
+aside img{
+    width: 200px;
+    height: 200px
+}
 
-            
-    }
-    .fundador{
-        margin-bottom: 20px;
-        margin-left: 0px;
-    }
+aside h1{
+    color:#f5a623;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+aside h3{
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 700;
+    
+}
+aside .button{
+    background-color: #f6a623;
+    border: none;
+    color: #fff;
+    font-size: 0.85em !important;
+    padding: 20px 30px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 0px 0px rgba(245,166,35,0.6);
+    
+    
+    
+}
+
+aside .icones{
+    margin-top: 10px
+}
+
+aside .icones i{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 5px;
+    padding-right: 5px
+}
+aside .conhecimento{
+    text-align: left;
+    margin-top: 40px
+}
+aside .conhecimento h2{
+    font-size: 1em;
+    color: #eeeeee;
+    font-weight: 700;
+    margin-bottom: 10px
+}
+aside .conhecimento small{
+    font-size: 0.750em;
+    font-weight: 400;
+    color: #8fa4af;
+    
+}
+.conhecimento progress{
+    margin-bottom: 10px
+}
+
+.conhecimento progress::-webkit-progress-value{
+    background-color: #f6a623 !important;
+    margin-bottom: 10px
+}
+article .content{
+    padding: 40px;
+    background-color: #fff !important;
+   
+}
+article .content h3{
+    color: #d0021b;
+    border-bottom: 1px solid #d0021b;
+    padding-bottom: 5px
+    
+    
+}
+article .content h3 i{
+    margin-right: 5px;
+}
+article .content h4{
+    font-size: 1.063em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+article .content h5{
+    font-size: 0.93em;
+    margin-bottom: 5px;
+}
+article .content small{
+    font-size: 0.93em;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+article .content p{
+    font-size: 0.93em
 }

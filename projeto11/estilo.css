@@ -1,0 +1,76 @@
+.container{
+    text-align: center
+}
+
+.card{
+    height: 240 px;
+    text-align: left;
+
+}
+
+.card label{
+    display: block;
+    padding-top: 15px;
+    padding-left: 15px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.card input{
+    box-sizing: border-box;
+    font-size: 100px;
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    margin-top: 25px;
+
+}
+
+.card.altura{
+    background-color: #3498db;
+}
+
+.card.peso{
+    background-color: #34495e;
+}
+
+button{
+    width: 98%;
+    font-size: 72px;
+    text-transform: uppercase;
+    padding: 25px;
+    margin-top: 25px;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.resultado{
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin-top: 25px;
+   text-transform: uppercase
+
+}
+.resultado img{
+    width: 100px;
+    margin-right: 25px;
+    
+}
+
+.resultado .imcValor{
+ font-size: 40px;
+}
+
+.resultado .imcDesc{
+    font-size: 20px
+}
+
+.esconder{
+    display: none;
+}
